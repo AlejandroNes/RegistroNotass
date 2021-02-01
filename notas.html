@@ -1,0 +1,60 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <!-- Required meta tags -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+
+    <!-- Bootstrap CSS -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-giJF6kkoqNQ00vy+HMDP7azOuL0xtbfIcaT9wjKHr8RbDVddVHyTfAAsrekwKmP1" crossorigin="anonymous">
+
+    <title>notasEstudiantes</title>
+  </head>
+  <body>
+    <h1 class="text-center text-dark display-6 mt-3">Rol de notas - ESTUDIANTES 2021</h1>
+    <div class="container">
+        <div class="row">
+            <div class="col-12">
+                <form class="form-control" id="formulario">
+                    <h3 class="text-center text-info display-6">Datos del estudiante</h3>
+                    <div class="d-flex justify-content-center">
+                        <input class="form-control w-75 d-inline-block my-2 border border-dark" type="text" name="nombre" id="nombre" placeholder="ingrese nombre">
+                    </div>
+                    <div class="d-flex justify-content-around">
+                        <input class="form-control border border-dark my-2 w-25 d-inline-block" type="number" name="nombre" id="nota1" placeholder="nota 1">
+                        <input class="form-control border border-dark my-2 w-25 d-inline-block" type="number" name="nombre" id="nota2" placeholder="nota2 ">
+                        <input class="form-control border border-dark my-2 w-25 d-inline-block" type="number" name="nombre" id="nota3" placeholder="nota 3">
+                        <input type="submit" id="boton" value="Aceptar" class="btn btn-outline-dark my-2">
+                    </div>
+                    <div id="resultado"></div>
+                </form>
+            </div>
+        </div>
+        <div class="container">
+            <div class="row">
+                <h3 class="text-center text-danger display-6 mt-4">Plantilla de notas de los Estudiantes</h3>
+                <div class="col-12">
+                    <table id="tabla" class="table table-bordered border border-secondary mt-4">
+                        <thead>
+                          <tr>
+                            <th class="text-center" scope="col">NOMBRE DEL ESTUDIANTE</th>
+                            <th class="text-center" scope="col">NOTA 1</th>
+                            <th class="text-center" scope="col">NOTA 2</th>
+                            <th class="text-center" scope="col">NOTA 3</th>
+                            <th class="text-center" scope="col">PROMEDIO</th>
+                            <th class="text-center" scope="col">X</th>
+                          </tr>
+                        </thead>
+                        <tbody id="resultadoTabla">
+                        </tbody>
+                      </table>
+                </div>
+            </div>
+        </div>
+    </div>
+    
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta1/dist/js/bootstrap.bundle.min.js" integrity="sha384-ygbV9kiqUc6oa4msXn9868pTtWMgiQaeYH7/t7LECLbyPA2x65Kgf80OJFdroafW" crossorigin="anonymous"></script>
+    <script src="notas.js"></script>
+  </body>
+</html>
